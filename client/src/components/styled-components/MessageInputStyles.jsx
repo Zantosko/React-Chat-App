@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Input = styled.input`
   width: 85%;
-  padding: 0.45rem 1rem;
+  padding: 0.48rem 1rem;
+  border: none;
 
   &:focus {
     outline: none;

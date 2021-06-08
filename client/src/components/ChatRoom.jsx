@@ -13,13 +13,13 @@ export default function ChatRoom(props) {
   const { roomId } = props.match.params;
   const { messages, sendMessage } = useChat(roomId);
 
-
+  console.log(messages)
   return (
     <Container>
       <Grid>
           <Navbar />
           <RoomDetails routeDetails={props}/>
-          <MessageFeed />
+          <MessageFeed messages={messages}/>
           <MessageInput sendMessage={sendMessage}/>
       </Grid>
     </Container>

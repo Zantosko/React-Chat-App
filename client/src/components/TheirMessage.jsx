@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import {
+  MessageLine2,
+  MessageContainer2 
+} from './styled-components/MessageStyles'
 
-export default function TheirMessage() {
+export default function TheirMessage({ message }) {
   return (
-    <div>
-      
-    </div>
+    <MessageLine2>
+      <MessageContainer2>
+        <p>{message.body}</p>
+      </MessageContainer2>
+    </MessageLine2>
   )
 }

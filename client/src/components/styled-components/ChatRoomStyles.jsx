@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90%;
+  height: 100%;
 `;
 
 export const Grid = styled.div`
@@ -15,7 +15,10 @@ export const Grid = styled.div`
     'Footer Footer';
   grid-template-columns: 0.5fr 1fr;
   grid-template-rows: 1fr 6fr 1fr;
-
+  height: 80%;
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 0.2em 0.2em 1em rgba(0, 0, 0, 0.6);
 
   @media (max-width: 770px) {
     grid-template-areas:
@@ -34,6 +37,8 @@ export const Nav = styled.nav`
   justify-content: space-between;
   width: 80vw;
   padding: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 `;
 export const AsideLeft = styled.aside`
   grid-area: AsideLeft;
@@ -48,6 +53,9 @@ export const AsideRight = styled.aside`
   grid-area: AsideRight;
   background-color: #fff;
   overflow-y: scroll;
+  padding: 1rem;
+  height: 100%;
+  max-width: 100%;
 `;
 
 export const Footer = styled.footer`
@@ -58,6 +66,8 @@ export const Footer = styled.footer`
   justify-content: space-between;
   width: 80vw;
   padding: 1rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 
   @media (max-width: 770px) {
     flex-direction: column;

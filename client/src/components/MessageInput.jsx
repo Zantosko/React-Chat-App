@@ -11,7 +11,7 @@ export default function MessageInput({ sendMessage }) {
 
   const handleSendMessage = () => {
     sendMessage(newMessage);
-    setNewMessage("");
+    setNewMessage(dispatch, "");
   }
 
   return (
