@@ -35,7 +35,7 @@ router.post("/register", validInfo, async (req, res) => {
     const salt = await bcrypt.genSalt(saltRound);
     const bcryptPassword = await bcrypt.hash(password, salt)
 
-    // const [p1, p2] = await Promise.all([
+    // const [bcryptPassword, bcryptRePassword] = await Promise.all([
     //   bcrypt.hash(password, salt),
     //   bcrypt.hash(rePassword, salt)
     // ]);
@@ -48,7 +48,7 @@ router.post("/register", validInfo, async (req, res) => {
       bcryptPassword
     });
 
-    // res.json(newUser)
+    res.json(newUser)
 
     // Generate JWT token
 
