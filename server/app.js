@@ -7,6 +7,11 @@ const formatMessage = require("./utils/messages");
 const port = process.env.PORT || 4001;
 const NEW_CHAT_MESSAGE_EVENT = "newChatMessage";
 
+//* Middleware
+app.use(express.json());
+
+//* Socket.io Setup
+
 const server = http.createServer(app);
 
 const io = socketIo(server, {
@@ -28,6 +33,15 @@ io.on("connection", socket => {
     socket.leave(roomId);
   });
 });
+
+//* Routes
+
+//? Index Route
+app.use("/", require("./routes/index"));
+
+//? Authorization Route
+app.use("/auth", require("./routes/jwtAuth"));
+
 
 server.listen(port, () => {
   console.log(`Listening on port ${port}`);

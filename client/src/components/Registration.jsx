@@ -21,37 +21,37 @@ export default function Registration() {
           <Form>
             <Title>Register</Title>
             <SubContainer>
-              <SubLabel htmlFor="room-name">First Name</SubLabel>
+              <SubLabel htmlFor="firstName">First Name</SubLabel>
             </SubContainer>
             <Input 
               type="text" 
-              name="room-name"
+              name="firstName"
               placeholder="First Name"
             /><SubContainer>
-            <SubLabel htmlFor="room-name">Last Name</SubLabel>
+            <SubLabel htmlFor="lastName">Last Name</SubLabel>
             </SubContainer>
             <Input 
               type="text" 
-              name="room-name"
+              name="lastName"
               placeholder="Last Name"
             /><SubContainer>
-            <SubLabel htmlFor="room-name">Email</SubLabel>
+            <SubLabel htmlFor="email">Email</SubLabel>
             </SubContainer>
             <Input 
-              type="text" 
-              name="room-name"
+              type="email" 
+              name="email"
               placeholder="Email Address"
             />
             <SubContainer>
-              <SubLabel htmlFor="room-name">New Username</SubLabel>
+              <SubLabel htmlFor="username">New Username</SubLabel>
             </SubContainer>
             <Input 
               type="text" 
-              name="room-name"
+              name="username"
               placeholder="Enter New Username"
             />
             <SubContainer>
-              <SubLabel htmlFor="room-name">New Password</SubLabel>
+              <SubLabel htmlFor="password">New Password</SubLabel>
             </SubContainer>
             <Input 
               type="password" 
@@ -59,11 +59,11 @@ export default function Registration() {
               placeholder="Enter New Password"
             />
             <SubContainer>
-              <SubLabel htmlFor="room-name">Re-type Password</SubLabel>
+              <SubLabel htmlFor="rePassword">Re-type Password</SubLabel>
             </SubContainer>
             <Input 
               type="password" 
-              name="room-name"
+              name="rePassword"
               placeholder="Re-type Password"
             />
             <Button>Sign Up</Button>
