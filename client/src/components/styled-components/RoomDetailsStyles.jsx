@@ -9,5 +9,6 @@ export const Content = styled.div`
 
 export const Title = styled.h1`
   margin: 1rem 0;
+  color: #cdbce1;
 `;
 

@@ -8,7 +8,7 @@ export const SubWrapper = styled.div`
 `;
 
 export const InputContainer = styled.div`
-  background-color: #189AB4;
+  background-color: #19191C;
   height: 40vh;
   width: 50vw;
   border-radius: 10px;
@@ -20,7 +20,7 @@ export const InputContainer = styled.div`
 `;
 
 export const InputContainer2 = styled.div`
-  background-color: #189AB4;
+  background-color: #19191C;
   height: 60vh;
   width: 50vw;
   border-radius: 10px;
@@ -28,7 +28,7 @@ export const InputContainer2 = styled.div`
 `;
 
 export const InputContainer3 = styled.div`
-  background-color: #189AB4;
+  background-color: #19191C;
   height: fit-content;
   width: 50vw;
   border-radius: 10px;
@@ -46,7 +46,7 @@ export const Form = styled.form`
 
 export const Label = styled.label`
   font-size: 3rem;
-  color: #fff;
+  color: #b39cd2;
 `;
 
 export const Input = styled.input`
@@ -56,9 +56,13 @@ export const Input = styled.input`
   border-radius: 4px;
   border: none;
   font-size: 15px;
+  background-color: #464649;
+  color: #fff;
 
   &:focus {
-    outline: none;
+    outline-color: #A970FF;
+    outline-width: 2px;
+    background-color: #000;
   }
 `;
 
@@ -66,15 +70,15 @@ export const Button = styled.button`
   width: 200px;
   font-size: 16px;
   padding: 0.6rem 1rem;
-  background-color: ${props => props.primary ? "#75E6DA" : "#05445E"};
+  background-color: ${props => props.primary ? "#464649" : "#772DE8"};
   border: none;
-  color: ${props => props.primary ? "black" : "#fff"};
+  color: #fff;
   border-radius: 4px;
 `;
 
 export const Title = styled.h1`
   font-size: 3rem;
-  color: #fff;
+  color: #b39cd2;
   margin-bottom: 2rem;
 `;
 
@@ -92,4 +96,8 @@ export const Divider = styled.hr`
   width: 80%;
   margin: 1rem 0 1.3rem 0;
   color: #fff;
+`;
+
+export const BottomText = styled.h3`
+  color: #b39cd2;
 `;

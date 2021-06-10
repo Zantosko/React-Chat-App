@@ -31,7 +31,7 @@ export const Grid = styled.div`
 
 export const Nav = styled.nav`
   grid-area: Nav;
-  background-color: #05445E;
+  background-color: #772DE8;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,7 +42,7 @@ export const Nav = styled.nav`
 `;
 export const AsideLeft = styled.aside`
   grid-area: AsideLeft;
-  background-color: rgba(0,0,0,0.8);
+  background-color: #1F2024;
   color: #fff;
 
   @media (max-width: 770px) {
@@ -51,7 +51,7 @@ export const AsideLeft = styled.aside`
 `;
 export const AsideRight = styled.aside`
   grid-area: AsideRight;
-  background-color: #fff;
+  background-color: #1A1A1D;
   overflow-y: scroll;
   padding: 1rem;
   height: 100%;
@@ -60,7 +60,7 @@ export const AsideRight = styled.aside`
 
 export const Footer = styled.footer`
   grid-area: Footer;
-  background-color: #05445E;
+  background-color: #772DE8;
   display: flex;
   align-items: center;
   justify-content: space-between;

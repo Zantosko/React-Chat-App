@@ -2,6 +2,7 @@ const express = require("express");
 const socketIo = require("socket.io");
 const http = require("http");
 const app = express();
+const cors = require("cors");
 const formatMessage = require("./utils/messages");
 
 const port = process.env.PORT || 4001;
@@ -9,6 +10,7 @@ const NEW_CHAT_MESSAGE_EVENT = "newChatMessage";
 
 //* Middleware
 app.use(express.json());
+app.use(cors());
 
 //* Socket.io Setup
 

@@ -1,22 +1,41 @@
 import styled from 'styled-components';
 
 export const Input = styled.input`
-  width: 85%;
-  padding: 0.48rem 1rem;
+  width: 80%;
+  padding: 0.53rem 1rem;
   border: none;
+  background-color: #464649;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
 
   &:focus {
-    outline: none;
+    outline-color: #A970FF;
+    outline-width: 2px;
+    background-color: #000;
+    color: #fff;
   }
+
+  &::placeholder {
+    color: #fff;
+    font-size: 14px;
+  }
+
 `;
 
 export const SendButton = styled.button`
   width: 15%;
-  background-color: #D4F1F4;
-  color: #05445E;
+  background-color: #cdbce1;
+  color: #251a36;
   padding: 0.45rem 1rem;
   border: none;
-  font-size: 14px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   @media (max-width: 770px) {
     width: 100px;
