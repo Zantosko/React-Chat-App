@@ -11,14 +11,13 @@ import useChat from '../hooks/useChat';
 
 export default function ChatRoom(props) {
   const { roomId } = props.match.params;
-  const { messages, sendMessage } = useChat(roomId);
+  const { messages, sendMessage, loggedInUsers } = useChat(roomId);
 
-  console.log(messages)
   return (
     <Container>
       <Grid>
           <Navbar />
-          <RoomDetails routeDetails={props}/>
+          <RoomDetails routeDetails={props} loggedInUsers={loggedInUsers}/>
           <MessageFeed messages={messages}/>
           <MessageInput sendMessage={sendMessage}/>
       </Grid>

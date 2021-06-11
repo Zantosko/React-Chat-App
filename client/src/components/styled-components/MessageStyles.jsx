@@ -35,5 +35,16 @@ export const MessageContainer2 = styled.div`
 `;
 
 export const MessageContent = styled.p`
-  font-size: 18px;
+  font-size: 21px;
+`;
+
+
+export const SenderIdContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end
+`;
+
+export const SenderId = styled.span`
+  font-size: 13px;
 `;

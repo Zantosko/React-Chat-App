@@ -9,6 +9,7 @@ import { useDispatch } from 'react-redux';
 
 // Actions
 import { setIsAuthenticated } from '../actions/auth-actions'
+import { removeUserFromRoom } from '../actions/usersInRoom-actions'
 
 export default function Navbar() {
   const dispatch = useDispatch();
@@ -17,10 +18,12 @@ export default function Navbar() {
     e.preventDefault()
     localStorage.removeItem("token");
     setIsAuthenticated(dispatch, false);
+    removeUserFromRoom(dispatch)
     toast.success("Logged out successfully")
   }
 
   const inform = () => {
+    removeUserFromRoom(dispatch)
     toast.info("Exited Room")
   }
 

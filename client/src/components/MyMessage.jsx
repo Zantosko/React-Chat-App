@@ -2,7 +2,9 @@ import React from 'react'
 import { 
   MessageLine, 
   MessageContainer,
-  MessageContent
+  MessageContent,
+  SenderIdContainer,
+  SenderId
 } from './styled-components/MessageStyles';
 
 export default function MyMessage({ message }) {
@@ -10,6 +12,9 @@ export default function MyMessage({ message }) {
     <MessageLine>
       <MessageContainer>
         <MessageContent>{message.body}</MessageContent>
+        <SenderIdContainer>
+          <SenderId>From: {message.senderName}</SenderId>
+        </SenderIdContainer>
       </MessageContainer>
     </MessageLine>
   )

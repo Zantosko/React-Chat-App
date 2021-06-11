@@ -21,8 +21,8 @@ export const InputContainer = styled.div`
 
 export const InputContainer2 = styled.div`
   background-color: #19191C;
-  height: 60vh;
-  width: 50vw;
+  height: 60%;
+  width: 50%;
   border-radius: 10px;
   box-shadow: 0.2em 0.2em 1em rgba(0, 0, 0, 0.4);
 `;
