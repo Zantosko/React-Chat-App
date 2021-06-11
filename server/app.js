@@ -37,7 +37,6 @@ io.on("connection", socket => {
 
     socket.join(user.room);
 
-
     // Send users and room info
     io.in(user.room).emit(ROOM_INFO, {
       room: user.room,
@@ -45,16 +44,12 @@ io.on("connection", socket => {
     })
   })
 
-  
-
   // Listen for new messages
   socket.on(NEW_CHAT_MESSAGE_EVENT, data => {
     io.in(roomId).emit(NEW_CHAT_MESSAGE_EVENT, data)
   });
 
   socket.on("disconnect", () => {
-    // socket.leave(roomId);
-
     const user = userLeave(socket.id);
 
     if(user) {
@@ -64,6 +59,8 @@ io.on("connection", socket => {
         users: getRoomUsers(user.room)
       });
     }
+
+    socket.leave(roomId);
   });
 });
 

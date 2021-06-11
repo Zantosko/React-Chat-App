@@ -46,6 +46,8 @@ export default function Login() {
         localStorage.setItem("token", parseResponse.token);
 
         setIsAuthenticated(dispatch, true);
+        setUsername(dispatch, "")
+        setPassword(dispatch, "")
         toast.success("Logged in successfully")
       } else {
         setIsAuthenticated(dispatch, false);

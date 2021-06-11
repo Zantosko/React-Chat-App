@@ -13,7 +13,7 @@ export const Grid = styled.div`
     'Nav Nav'
     'AsideLeft AsideRight'
     'Footer Footer';
-  grid-template-columns: 0.5fr 1fr;
+  grid-template-columns: 275px 1fr;
   grid-template-rows: 1fr 6fr 1fr;
   height: 80%;
   max-width: 80%;

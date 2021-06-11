@@ -5,12 +5,13 @@ export const SubWrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
+  overflow: scroll;
 `;
 
 export const InputContainer = styled.div`
   background-color: #19191C;
-  height: 40vh;
-  width: 50vw;
+  height: 40%;
+  width: 50%;
   border-radius: 10px;
   box-shadow: 0.2em 0.2em 1em rgba(0, 0, 0, 0.4);
   display: flex;
@@ -25,12 +26,15 @@ export const InputContainer2 = styled.div`
   width: 50%;
   border-radius: 10px;
   box-shadow: 0.2em 0.2em 1em rgba(0, 0, 0, 0.4);
+  margin: 1rem;
+  padding: 1rem;
+  overflow: auto;
 `;
 
 export const InputContainer3 = styled.div`
   background-color: #19191C;
   height: fit-content;
-  width: 50vw;
+  width: 50%;
   border-radius: 10px;
   box-shadow: 0.2em 0.2em 1em rgba(0, 0, 0, 0.4);
   padding: 1rem;
@@ -42,11 +46,16 @@ export const Form = styled.form`
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
 `;
 
 export const Label = styled.label`
   font-size: 3rem;
   color: #b39cd2;
+
+  @media (max-width: 550px) {
+    font-size: 2.4rem;
+  }
 `;
 
 export const Input = styled.input`
@@ -74,12 +83,25 @@ export const Button = styled.button`
   border: none;
   color: #fff;
   border-radius: 4px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 550px) {
+    width: 150px;
+    font-size: 14px;
+  }
 `;
 
 export const Title = styled.h1`
   font-size: 3rem;
   color: #b39cd2;
   margin-bottom: 2rem;
+
+  @media (max-width: 550px) {
+    font-size: 2.4rem;
+  }
 `;
 
 export const SubContainer = styled.div`

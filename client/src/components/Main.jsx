@@ -4,6 +4,7 @@ import Home from './Home';
 import ChatRoom from './ChatRoom';
 import Login from './Login';
 import Registration from './Registration';
+import Error from './ErrorPage';
 
 // React Toastify
 import { toast } from "react-toastify";
@@ -15,6 +16,7 @@ import { useSelector, useDispatch } from "react-redux";
 // Actions
 import { setIsAuthenticated } from '../actions/auth-actions'
 
+// React Toastify Configuration
 toast.configure();
 
 export const Main = () => {
@@ -62,7 +64,6 @@ export const Main = () => {
           <Redirect to="/login"/>
         )
       }/>
-      <Route exact path="/chatroom/" component={ChatRoom}></Route>
       <Route 
         exact path="/register" 
         render={props =>
@@ -83,6 +84,7 @@ export const Main = () => {
           )
         }
       />
+      <Route path="*" component={Error}/>
     </Switch>
   )
 }
