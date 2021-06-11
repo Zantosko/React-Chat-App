@@ -48,5 +48,5 @@ export const SenderIdContainer = styled.div`
 export const SenderId = styled.span`
   font-size: 13px;
   margin-top: 10px;
-  color: #333;
+  color: #000;
 `;
