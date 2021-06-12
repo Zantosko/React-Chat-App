@@ -30,11 +30,11 @@ This a real-time chat application that requires users create account and login. 
 
 ## Key Features
 
-- **JWT Authentication** -
+- **JWT Authentication** - This feature allows a user to create an account and login accordingly. Once a new user registers and account, it will hit a registration route that runs the request body it through custom middleware that validates if all input fields are filled and formatted correctly. Once validated the password is then "hashed" with Bcrypt and mapped to the database with Sequelize which results with the client being returned a JWT. This JWT is then saved in local storage. For logging in whenever a user makes a request Bcrypt will compare the entered password to the hashed password and then once again return a JWT, where it is then saved to local storage.
 
-- **Real Time Communication with Socket.io** -
+- **Real Time Communication with Socket.io** - This feature enables the server and client to send messages to each other at any time, after a connection is established, without the need for explicit requests by one or the other. This is method preferred over HTTP, due to the fact that it has a faster reaction time and is typically better suited for ongoing updates. An initial "handshake" is established between the client and the server and this allows for ease of continous messaging between different users.
 
-- **Toastify Notifications**
+- **Toastify Notifications** - Whenever valid or invalid credentials are given at login/registration, a small toastify message update the user whether authentication was successful or not.
 
 ## Technologies Used
 
