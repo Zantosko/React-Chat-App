@@ -25,7 +25,7 @@ This a real-time chat application that requires users create account and login. 
 ## Website Color Palette
 
 <p align="center">
-  <img src="client/src/assets/screenshots/Color-Palette.png" height="300" width="300"/>
+  <img src="client/src/assets/screenshots/Color-Palette.png" height="300" width="500"/>
 </p>
 
 ## Key Features
@@ -33,6 +33,8 @@ This a real-time chat application that requires users create account and login. 
 - **JWT Authentication** -
 
 - **Real Time Communication with Socket.io** -
+
+- **Toastify Notifications**
 
 ## Technologies Used
 
@@ -53,6 +55,7 @@ This a real-time chat application that requires users create account and login. 
 - Bcrypt
 
 **NPM Packages**:
+
 `Client`:
 - “react-redux”: “^7.2.4”,
 - “react-router-dom”: “^5.2.0”,
@@ -72,3 +75,22 @@ This a real-time chat application that requires users create account and login. 
 - “sequelize”: “^6.6.2”,
 - “socket.io”: “^4.1.2”
 - “sequelize-cli”: “^6.2.0”
+
+## Challenges
+
+1. There was steep learning curve for both Socket.io and JWT.
+2. Planning out how many Actions/Reducers that I needed to make and how they could be reused.
+3. Getting used to Styled Components.
+4. Hashing passwords with Bcrypt.
+5. Accessing user data through Socket.io.
+
+## What was Learned?
+
+- Integraing React with back-end comprised of Node.js and PostgreSQL.
+- Gained a deeper understanding of web sockets and user authentication.
+- Became more familiar with Socket.io syntax and initial setup.
+- Using JWT syntax to create a tokens whenever a user registers or logs in.
+- Creating custom middleware.
+- Became more familiar with React/Redux methods.
+  - Gained some exposure implementing custom React Hooks.
+- Using Styled Components
